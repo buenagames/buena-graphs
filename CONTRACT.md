@@ -3,7 +3,7 @@
 > The plain-text grammar of a buena-graphs figure: what a generator
 > must emit and what a renderer may rely on.
 
-**Version:** 1.0.0
+**Version:** 1.0.1
 **Last updated:** 2026-09-04
 **Consumers:** mrkdwn (BUENA-578) and any tool that upgrades the
 rendering of a catalog-true figure.
@@ -96,6 +96,19 @@ reading of the figure — e.g. `90 percent uptime over 42 days`). These
 lines are part of the figure and are rendered with it; a renderer
 MUST NOT strip or truncate them.
 
+## Implementations (informative)
+
+| Renderer | Contract version | Where |
+|---|---|---|
+| mrkdwn (`TextFigure`, Core/Markdown) | 1.0.0 | [buenagames/mrkdwn#630](https://github.com/buenagames/mrkdwn/pull/630) — recognises all thirty catalog twins; strict on title case and the exact `text` info string; silent, total fallback |
+
+One interpretation from that implementation, recorded here so the next
+renderer reads the same contract: the body clause's fallback is about
+non-ASCII characters outside the inventory. ASCII control characters
+(a stray tab) are not part of the grammar generators emit, and a
+renderer MAY tolerate them rather than fall back — tolerating them
+cannot reclassify a catalog-true figure, which never contains them.
+
 ## Versioning
 
 Semver, applied to renderer-visible behavior:
@@ -116,5 +129,6 @@ Renderers pin the MAJOR and state the version they implement.
 | Blank line after title, 30/30 | **Measured** 2026-09-04 |
 | Character inventory, complete | **Measured** 2026-09-04 — union of all non-ASCII characters across the thirty twins |
 | Family/character pairings | **Read** 2026-09-04 from the catalog's own sections |
+| First-consumer validation: 30/30 twins recognised under this contract | **Read** 2026-09-04 from mrkdwn's TextFigureTests (buenagames/mrkdwn#630) |
 
 Last verified: 2026-09-04.
