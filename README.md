@@ -27,3 +27,14 @@ The **code** in this repository is MIT-licensed (see
 under its own license and is not contained in, nor licensed by, this
 repository. The graphs are drawn *for* the typeface's grid; they do
 not include it.
+
+The components derive from
+[mdx-graphs](https://github.com/keshav-exe/markdown-graphs)
+(MIT, Copyright (c) 2026 Keshav Bagaade), carried here as a documented
+fork — the edits are listed at the top of
+[`src/components/index.ts`](src/components/index.ts). The registry's
+default theme values come from the same source
+([`scripts/registry-theme.json`](scripts/registry-theme.json)).
+
+A buena-graphs figure is readable with no framework at all — and
+renderers that know [the contract](CONTRACT.md) upgrade it.
