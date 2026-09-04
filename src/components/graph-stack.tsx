@@ -1,13 +1,13 @@
 "use client"
 
-import { motion, useReducedMotion } from "./motion-static"
+import { motion, useReducedMotion } from "./motion-static.js"
 
 import {
   Graph,
   GraphBody,
   GraphTick,
   GraphTrack,
-} from "./graph-frame"
+} from "./graph-frame.js"
 import {
   fadeUp,
   isMonoPalette,
@@ -17,7 +17,7 @@ import {
   staggerList,
   type Glyphs,
   type GraphPalette,
-} from "./graph-motion"
+} from "./graph-motion.js"
 
 const DEFAULT_GLYPHS = ["█", "▓", "▒", "░", "#", "=", "+", "-"]
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "../lib/utils"
+import { cn } from "../lib/utils.js"
 
 function GraphArrow({
   accent = false,

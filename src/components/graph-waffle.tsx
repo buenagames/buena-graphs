@@ -1,8 +1,8 @@
 "use client"
 
-import { motion, useReducedMotion } from "./motion-static"
+import { motion, useReducedMotion } from "./motion-static.js"
 
-import { Graph, GraphBody } from "./graph-frame"
+import { Graph, GraphBody } from "./graph-frame.js"
 import {
   fillDelay,
   graphTransition,
@@ -10,8 +10,8 @@ import {
   trackMarks,
   type Glyphs,
   type GraphPalette,
-} from "./graph-motion"
-import { cn } from "../lib/utils"
+} from "./graph-motion.js"
+import { cn } from "../lib/utils.js"
 
 type GraphWaffleProps = {
   title: string

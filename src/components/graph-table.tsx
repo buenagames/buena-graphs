@@ -2,18 +2,18 @@
 
 import type { ReactNode } from "react"
 
-import { motion, useReducedMotion } from "./motion-static"
+import { motion, useReducedMotion } from "./motion-static.js"
 
 import {
   Graph,
   GraphBody,
   GraphRule,
-} from "./graph-frame"
+} from "./graph-frame.js"
 import {
   fadeUp,
   staggerList,
-} from "./graph-motion"
-import { cn } from "../lib/utils"
+} from "./graph-motion.js"
+import { cn } from "../lib/utils.js"
 
 type GraphAlign = "left" | "right"
 
