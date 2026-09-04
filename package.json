@@ -23,10 +23,11 @@
     "CONTRACT.md"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && node scripts/build-registry.mjs",
+    "build": "tsc -p tsconfig.json && node scripts/build-registry.mjs && node scripts/gen-readme-components.mjs && node scripts/gen-components-doc.mjs",
     "check": "tsc -p tsconfig.json --noEmit",
     "prepare": "npm run build",
-    "smoke": "tsx scripts/smoke.mts"
+    "smoke": "tsx scripts/smoke.mts",
+    "build:site": "npm run build && node scripts/build-site.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

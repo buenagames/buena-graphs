@@ -19,3 +19,7 @@ jobs:
         run: python3 skills/buena-graphs/scripts/validate-figures.py skills/buena-graphs/examples/*.md
       - name: readme components table is fresh
         run: node scripts/gen-readme-components.mjs && git diff --exit-code README.md
+      - name: components doc is fresh
+        run: node scripts/gen-components-doc.mjs && git diff --exit-code docs/components.md
+      - name: site assembles
+        run: node scripts/build-site.mjs
