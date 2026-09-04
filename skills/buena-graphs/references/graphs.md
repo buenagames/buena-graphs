@@ -1,6 +1,6 @@
 <!-- GENERATED -- do not hand-edit.
      Source:    https://buena-mono.buenalabs.io/graphs.md
-     Retrieved: 2026-09-04T07:10:51Z
+     Retrieved: 2026-09-04T18:11:51Z
      Regenerate: scripts/sync-catalog.sh (this skill) -->
 
 # Graphs
@@ -299,13 +299,12 @@ Shape rather than quantity: what contains what, what follows what, what runs alo
 [ SRC ]
 
 src/
-├─ components/  9
-│  ├─ graphs/   35
+├─ components/  8
 │  └─ ui/       4
 ├─ lib/         19
 ├─ pages/       13
 └─ styles/      1
-Tree with 7 nodes
+Tree with 6 nodes
 ```
 
 `Flow` (`GraphFlow`) — Nodes on dashed arrows. Rows read left to right; one path can be accented.
@@ -462,7 +461,7 @@ remaining 00:00:00
 
 mdx-graphs is shadcn-registry copy-in rather than an npm package, so the components land in your repository: `pnpm dlx shadcn@latest add https://mdx-graphs.kshv.me/r/graph-spark.json`, or `all` for the set.
 
-The copy used here is vendored with four documented edits: the imports point at siblings, colour is bound to this site's tokens rather than the library's, nothing is dimmed below the 4.5:1 contrast floor, and the animation runtime is replaced by a static shim so the graphs render at build time and ship as characters.
+The components are imported from `@buenalabs/buena-graphs`, where the copy vendored from mdx-graphs lives (extracted from this site 2026-09-04) with four documented edits: the imports point at siblings, colour is bound to the consumer's tokens rather than the library's, nothing is dimmed below the 4.5:1 contrast floor, and the animation runtime is replaced by a static shim so the graphs render at build time and ship as characters.
 
 ---
 
