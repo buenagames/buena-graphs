@@ -4,11 +4,12 @@ Text-first graphs on the Buena Mono grid: thirty React components,
 each with an official plain-text twin — the same characters read in a
 terminal, on GitHub, and render natively in mrkdwn.
 
-**Status: private until launch.** The extraction from
-`buena-mono.buenalabs.io` (which currently owns the components and
-text renderer) is phased in
-`specs/002-graphs-package/plan.md` of that repo. What exists here
-today: the frame contract.
+**Status: private until launch.** The components and the text engine
+were extracted from the buena-mono specimen site, which remains the
+catalog's publishing surface at
+<https://buena-mono.buenalabs.io/graphs.md>. What exists here today:
+the frame contract, the components and text engine, the generated
+registry, and the agent skill.
 
 ## What ships from this repo
 
