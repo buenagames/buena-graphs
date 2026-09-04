@@ -1,4 +1,4 @@
-# BUENALB-1 shipped: the prose-and-graphs grammar is live
+# The prose-and-graphs grammar shipped
 
 The grammar shipped end to end in one day: the convention, both
 skills, the package with its contract, and a renderer that recognizes
@@ -59,7 +59,7 @@ only the components and the text engine moved.
  ├── studio/                    conventions/agent-prose.md, spec-kit
  ├── skills/                    prose-graphs 1.1.0, eval records
 +├── buena-graphs/              CONTRACT.md 1.0.1, registry, public skill
- ├── buena-mono.buenalabs.io/   spec 002-graphs-package, PR #11 held
+ ├── buena-mono.buenalabs.io/   the specimen site; package switch staged
  └── mrkdwn/                    TextFigure, contract 1.0.0 pinned
 ```
 

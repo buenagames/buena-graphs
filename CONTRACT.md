@@ -5,7 +5,7 @@
 
 **Version:** 1.0.1
 **Last updated:** 2026-09-04
-**Consumers:** mrkdwn (BUENA-578) and any tool that upgrades the
+**Consumers:** mrkdwn, and any tool that upgrades the
 rendering of a catalog-true figure.
 **Source of truth for examples:** the published catalog,
 <https://buena-mono.buenalabs.io/graphs.md> — thirty components, each
@@ -100,7 +100,7 @@ MUST NOT strip or truncate them.
 
 | Renderer | Contract version | Where |
 |---|---|---|
-| mrkdwn (`TextFigure`, Core/Markdown) | 1.0.0 | [buenagames/mrkdwn#630](https://github.com/buenagames/mrkdwn/pull/630) — recognises all thirty catalog twins; strict on title case and the exact `text` info string; silent, total fallback |
+| mrkdwn (`TextFigure`, Core/Markdown) | 1.0.0 | Recognises all thirty catalog twins; strict on title case and the exact `text` info string; silent, total fallback |
 
 One interpretation from that implementation, recorded here so the next
 renderer reads the same contract: the body clause's fallback is about
@@ -129,6 +129,6 @@ Renderers pin the MAJOR and state the version they implement.
 | Blank line after title, 30/30 | **Measured** 2026-09-04 |
 | Character inventory, complete | **Measured** 2026-09-04 — union of all non-ASCII characters across the thirty twins |
 | Family/character pairings | **Read** 2026-09-04 from the catalog's own sections |
-| First-consumer validation: 30/30 twins recognised under this contract | **Read** 2026-09-04 from mrkdwn's TextFigureTests (buenagames/mrkdwn#630) |
+| First-consumer validation: 30/30 twins recognised under this contract | **Read** 2026-09-04 from mrkdwn's TextFigureTests |
 
 Last verified: 2026-09-04.
