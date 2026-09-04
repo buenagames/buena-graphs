@@ -1,0 +1,36 @@
+{
+  "skill_name": "buena-graphs",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Add a small chart to this README section showing weekly downloads over the last five weeks: 120, 340, 210, 505, 480. The README is plain GitHub markdown.",
+      "expected_output": "A catalog twin (spark/bars family) in a fenced text block with a [ TITLE ] frame, real values, no invented drawing",
+      "expectations": [
+        "The figure is a fenced plain-text block whose first line matches the [ TITLE ] frame grammar",
+        "The characters come from a catalog family (track/spark or bars), not an improvised drawing",
+        "Contains no Mermaid, SVG, HTML or image figure",
+        "The five real values appear as labels/data, not invented numbers"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our docs site is a React app set up with shadcn. Add an uptime visual for the status page: 42 days, 90% up, 6 degraded days, 2 outages.",
+      "expected_output": "Registry install (shadcn add of graph-uptime) and JSX usage with props, not pasted text characters",
+      "expectations": [
+        "Recommends or performs a shadcn registry install of the uptime component",
+        "Shows JSX usage with props rather than pasting a text twin into the component tree",
+        "Contains no Mermaid, SVG or improvised drawing"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write a short status report section covering six metrics: uptime 99.2%, p95 latency 340ms, error rate 0.4%, deploys 12, MTTR 18min, apdex 0.93. Make it visual.",
+      "expected_output": "Restraint: at most two figures with prose between, the rest as a table or prose - not six graphs",
+      "expectations": [
+        "No more than two figures appear in the section",
+        "Prose or a table carries what figures do not",
+        "Any figure present is fenced plain text in a catalog family"
+      ]
+    }
+  ]
+}

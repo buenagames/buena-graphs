@@ -1,0 +1,22 @@
+{
+  "skillName": "buena-graphs",
+  "version": "1.0.0",
+  "runAt": "2026-09-04",
+  "model": "sonnet",
+  "expectationPassRate": {
+    "baseline": 0.4,
+    "withSkill": 0.8,
+    "withSkillAfterFix": 1.0
+  },
+  "expectationsPassed": {
+    "baseline": "4/10",
+    "withSkill": "8/10",
+    "withSkillAfterFix": "10/10 (eval 1 re-run 4/4)"
+  },
+  "meanSubagentTokens": {
+    "baseline": 40239,
+    "withSkill": 53630
+  },
+  "verdict": "The skill beats its absence decisively (40% -> 80%, 100% after the pre-release body fix) at ~33% more tokens per run. Baselines produced Mermaid, improvised drawings, a bespoke 150-line component, and a six-figure gallery; with the skill: catalog twins, a registry install, and one KPI figure.",
+  "provenance": "Raw outputs in runs/2026-09-04/. Token figures from the harness's per-subagent usage; eval-2-with-skill tokens excluded (that run performed a real install)."
+}

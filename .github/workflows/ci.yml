@@ -13,3 +13,5 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run smoke
+      - name: registry is fresh (r/ committed == generated)
+        run: git diff --exit-code r/

@@ -1,0 +1,73 @@
+{
+  "skillName": "buena-graphs",
+  "gradedAt": "2026-09-04",
+  "grader": "session agent; expectations from evals.json checked by hand",
+  "conditions": {
+    "baseline": "clean Sonnet subagent, task only",
+    "withSkill": "clean Sonnet subagent told to read SKILL.md + references first"
+  },
+  "results": [
+    {
+      "evalId": 1,
+      "baseline": {
+        "passed": 1,
+        "of": 4,
+        "failed": [
+          "Mermaid figure",
+          "improvised bar drawing",
+          "no [ TITLE ] frame"
+        ]
+      },
+      "withSkill": {
+        "passed": 2,
+        "of": 4,
+        "failed": [
+          "ramp used \u2584\u2586, outside CONTRACT.md's inventory",
+          "the five real values did not appear"
+        ]
+      }
+    },
+    {
+      "evalId": 2,
+      "baseline": {
+        "passed": 2,
+        "of": 3,
+        "failed": [
+          "wrote a ~150-line bespoke component instead of installing from the registry"
+        ]
+      },
+      "withSkill": {
+        "passed": 3,
+        "of": 3,
+        "failed": [],
+        "note": "Run escaped the intended sandbox and executed against a real repo (side effects reverted). It also surfaced a real consumer edge: typed targets split the tree across Astro dual-renderer boundaries -- now a troubleshooting row."
+      }
+    },
+    {
+      "evalId": 3,
+      "baseline": {
+        "passed": 1,
+        "of": 3,
+        "failed": [
+          "gallery of six improvised meter figures",
+          "figures not catalog-family fenced text"
+        ]
+      },
+      "withSkill": {
+        "passed": 3,
+        "of": 3,
+        "failed": []
+      }
+    }
+  ],
+  "verification": {
+    "verifiedAt": "2026-09-04",
+    "evalId": 1,
+    "skillState": "pre-release body fix (inventory rule + values-must-appear); version stays 1.0.0, never released",
+    "result": {
+      "passed": 4,
+      "of": 4
+    },
+    "note": "Ramp characters all within the contract inventory; the five real values appear in the summary line. Output in runs/2026-09-04/e1-with-skill-fixed.md."
+  }
+}
