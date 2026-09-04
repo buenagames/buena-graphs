@@ -1,13 +1,13 @@
 "use client"
 
-import { motion, useReducedMotion } from "./motion-static"
+import { motion, useReducedMotion } from "./motion-static.js"
 
 import {
   Graph,
   GraphBody,
   GraphTick,
   GraphTrack,
-} from "./graph-frame"
+} from "./graph-frame.js"
 import {
   fadeUp,
   resolveGlyphs,
@@ -15,8 +15,8 @@ import {
   toneClass,
   type Glyphs,
   type GraphPalette,
-} from "./graph-motion"
-import { cn } from "../lib/utils"
+} from "./graph-motion.js"
+import { cn } from "../lib/utils.js"
 
 type UptimeStatus = "ok" | "degraded" | "down" | "empty"
 

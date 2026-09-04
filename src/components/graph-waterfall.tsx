@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useReducedMotion } from "./motion-static"
+import { motion, useReducedMotion } from "./motion-static.js"
 
 import {
   Graph,
@@ -8,7 +8,7 @@ import {
   GraphRule,
   GraphTick,
   GraphTrack,
-} from "./graph-frame"
+} from "./graph-frame.js"
 import {
   fadeUp,
   staggerList,
@@ -16,8 +16,8 @@ import {
   trackMarks,
   type Glyphs,
   type GraphPalette,
-} from "./graph-motion"
-import { cn } from "../lib/utils"
+} from "./graph-motion.js"
+import { cn } from "../lib/utils.js"
 
 type WaterfallKind = "start" | "in" | "out" | "end"
 
