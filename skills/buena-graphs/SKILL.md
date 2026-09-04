@@ -39,7 +39,7 @@ characters are never invented; they are copied.
    and render it with props instead of pasting characters:
 
    ```sh
-   npx shadcn@latest add https://raw.githubusercontent.com/buenagames/buena-graphs/main/r/graph-uptime.json
+   npx shadcn@latest add https://graphs.buenalabs.io/r/graph-uptime.json
    ```
 
    Any component from `r/` works the same way; `r/all.json` installs

@@ -38,7 +38,7 @@ Components, into any shadcn-style project (each item carries its
 dependencies, theme variables, and css utilities):
 
 ```sh
-npx shadcn@latest add https://raw.githubusercontent.com/buenagames/buena-graphs/main/r/graph-uptime.json
+npx shadcn@latest add https://graphs.buenalabs.io/r/graph-uptime.json
 ```
 
 The agent skill, which teaches a coding agent when to copy a text
