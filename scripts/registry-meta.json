@@ -1,0 +1,125 @@
+{
+  "_provenance": "Generated 2026-09-04 from the published catalog (buena-mono.buenalabs.io/graphs.md); regenerate rather than hand-edit.",
+  "components": {
+    "graph-frame": {
+      "title": "Frame",
+      "description": "Not a graph \u2014 the dashed figure the other twenty-nine are drawn inside. Compose it with GraphBody, GraphTitle, GraphRule, GraphTrack and GraphTick to draw one of your own."
+    },
+    "graph-activity": {
+      "title": "Activity",
+      "description": "A contribution grid. Dated counts in, weeks and intensity derived."
+    },
+    "graph-calendar": {
+      "title": "Calendar",
+      "description": "One month on a seven-column grid, with days marked and one picked out."
+    },
+    "graph-uptime": {
+      "title": "Uptime",
+      "description": "A status strip \u2014 one cell a day, three states and a gap."
+    },
+    "graph-cells": {
+      "title": "Cells",
+      "description": "Small multiples of an on-and-off grid \u2014 the same shape drawn once per group, for comparing patterns rather than magnitudes."
+    },
+    "graph-waffle": {
+      "title": "Waffle",
+      "description": "A percentage as a block of cells, when a bar would not show the remainder."
+    },
+    "graph-spark": {
+      "title": "Spark",
+      "description": "A sparkline in block glyphs, scaled to its own highest point."
+    },
+    "graph-plot": {
+      "title": "Plot",
+      "description": "A line or area plot with a y-scale, for when the magnitude matters."
+    },
+    "graph-kpi": {
+      "title": "KPI",
+      "description": "One number with its trend under it \u2014 a headline that shows its working."
+    },
+    "graph-heatmap": {
+      "title": "Heatmap",
+      "description": "A punchcard: labelled rows against labelled columns, intensity by glyph."
+    },
+    "graph-slope": {
+      "title": "Slope",
+      "description": "Two columns and the lines between them \u2014 what moved, and which way."
+    },
+    "graph-bars": {
+      "title": "Bars",
+      "description": "Two series above and below a label \u2014 a before and after of the same categories, with the thing between them named."
+    },
+    "graph-rank": {
+      "title": "Rank",
+      "description": "An ordered bar list \u2014 the shape you want for a top-n."
+    },
+    "graph-meter": {
+      "title": "Meter",
+      "description": "A single value on a track \u2014 the smallest chart that is still a chart."
+    },
+    "graph-bullet": {
+      "title": "Bullet",
+      "description": "Value against target on one track, for a number with something to beat."
+    },
+    "graph-stack": {
+      "title": "Stack",
+      "description": "Parts of a whole, one row per group. The palette that earns three hues."
+    },
+    "graph-funnel": {
+      "title": "Funnel",
+      "description": "Steps that only ever narrow, with the drop shown at each one."
+    },
+    "graph-waterfall": {
+      "title": "Waterfall",
+      "description": "How a total was arrived at \u2014 a start, the moves, and where it landed."
+    },
+    "graph-tree": {
+      "title": "Tree",
+      "description": "A hierarchy in branch glyphs, with one node carrying the accent."
+    },
+    "graph-flow": {
+      "title": "Flow",
+      "description": "Nodes on dashed arrows. Rows read left to right; one path can be accented."
+    },
+    "graph-timeline": {
+      "title": "Timeline",
+      "description": "Dated events down a connector, with done, current and upcoming states."
+    },
+    "graph-gantt": {
+      "title": "Gantt",
+      "description": "Bars on a shared track, measured from day counts rather than drawn."
+    },
+    "graph-table": {
+      "title": "Table",
+      "description": "A plain table inside the frame, with per-column alignment and a footer."
+    },
+    "graph-compare": {
+      "title": "Compare",
+      "description": "A feature matrix. Booleans draw as \u2713 and \u2013; one column takes the accent."
+    },
+    "graph-spec": {
+      "title": "Spec",
+      "description": "A definition list \u2014 labels down the left, values right, one accented."
+    },
+    "graph-stat": {
+      "title": "Stat",
+      "description": "A row of headline figures, each with a label and an optional hint."
+    },
+    "graph-diff": {
+      "title": "Diff",
+      "description": "Added, removed and unchanged rows, with a total at the bottom."
+    },
+    "graph-invoice": {
+      "title": "Invoice",
+      "description": "A document rather than a chart \u2014 the frame doing receipts and statements."
+    },
+    "graph-timer": {
+      "title": "Timer",
+      "description": "Elapsed time, time since, or a wall clock."
+    },
+    "graph-countdown": {
+      "title": "Countdown",
+      "description": "Time remaining until an instant, with a message for when it lands."
+    }
+  }
+}
