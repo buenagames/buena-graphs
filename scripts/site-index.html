@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>buena-graphs</title>
+<style>
+  :root { --bg:#FAFAF8; --ink:#1C1D21; --muted:#6C6F77; --accent:#3D5BC7;
+          --frame:rgba(28,29,33,.3); --card:#F3F3EF; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#17181B; --ink:#E8E8E4; --muted:#9A9DA5; --accent:#8FA3E8;
+            --frame:rgba(232,232,228,.34); --card:#1D1E23; }
+  }
+  body { background:var(--bg); color:var(--ink); margin:0; padding:48px 20px;
+         font-family:ui-monospace,"JetBrains Mono","SF Mono",Menlo,monospace; }
+  main { max-width:64ch; margin:0 auto; line-height:1.6; font-size:15px; }
+  h1 { font-size:22px; margin:0 0 6px; }
+  .sub { color:var(--muted); margin:0 0 32px; }
+  pre { background:var(--card); padding:16px 18px; overflow-x:auto;
+        border:1px dashed var(--frame); }
+  a { color:var(--accent); }
+  ul { padding-left:1.2em; }
+  li { margin:6px 0; }
+  .foot { color:var(--muted); font-size:12px; margin-top:40px;
+          border-top:1px solid var(--frame); padding-top:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>buena-graphs</h1>
+  <p class="sub">Text-first graphs on the Buena Mono grid. The figure is
+  readable with no framework at all — renderers that know the contract
+  upgrade it.</p>
+<pre>[ STATUS ]
+
+████████████████▒████████·▒███
+█████████▒██
+90%               6w ago today
+█ up  ▒ slow  · down
+90 percent uptime over 42 days, 6w ago to today</pre>
+  <ul>
+    <li><a href="/CONTRACT.md">The frame contract</a> — the grammar a renderer may rely on</li>
+    <li><a href="/components.md">Components and their props</a> — thirty, with verbatim type contracts</li>
+    <li><a href="/r/all.json">Registry</a> — <code>npx shadcn@latest add &lt;this-origin&gt;/r/graph-uptime.json</code></li>
+    <li><a href="https://buena-mono.buenalabs.io/graphs">The catalog, rendered live</a> — every twin beside the code that drew it</li>
+  </ul>
+  <p class="foot">MIT (code) · the Buena Mono typeface is a separate work ·
+  components derive from mdx-graphs (© 2026 Keshav Bagaade, MIT)</p>
+</main>
+</body>
+</html>
