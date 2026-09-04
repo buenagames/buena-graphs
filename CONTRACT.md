@@ -3,7 +3,7 @@
 > The plain-text grammar of a buena-graphs figure: what a generator
 > must emit and what a renderer may rely on.
 
-**Version:** 1.0.1
+**Version:** 1.0.2
 **Last updated:** 2026-09-04
 **Consumers:** mrkdwn, and any tool that upgrades the
 rendering of a catalog-true figure.
@@ -61,7 +61,8 @@ what keeps false positives near zero for detectors.
 ## The body (normative)
 
 The body is lines of printable ASCII plus, exclusively, this measured
-character inventory:
+character inventory — twenty-one characters, counted so no prose
+about this contract miscounts them again:
 
 ```text
 █ ▓ ▒ ░ · ▁ ▂ ▃ ▅ ▇ ─ │ ├ └ ● ▶ ✓ → – — −
@@ -129,6 +130,7 @@ Renderers pin the MAJOR and state the version they implement.
 | Blank line after title, 30/30 | **Measured** 2026-09-04 |
 | Character inventory, complete | **Measured** 2026-09-04 — union of all non-ASCII characters across the thirty twins |
 | Family/character pairings | **Read** 2026-09-04 from the catalog's own sections |
+| Inventory count: 21, all natively covered by Buena Mono 1.233 | **Measured** 2026-09-04 — fontTools cmap check against the 5406-glyph build |
 | First-consumer validation: 30/30 twins recognised under this contract | **Read** 2026-09-04 from mrkdwn's TextFigureTests |
 
 Last verified: 2026-09-04.
