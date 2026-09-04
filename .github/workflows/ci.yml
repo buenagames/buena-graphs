@@ -15,3 +15,5 @@ jobs:
       - run: npm run smoke
       - name: registry is fresh (r/ committed == generated)
         run: git diff --exit-code r/
+      - name: example figures are contract-valid
+        run: python3 skills/buena-graphs/scripts/validate-figures.py skills/buena-graphs/examples/*.md
