@@ -1,12 +1,11 @@
 {
   "name": "@buenalabs/buena-graphs",
   "version": "0.1.0",
-  "private": true,
   "description": "Text-first graphs on the Buena Mono grid - components, text renderer, registry, frame contract, and agent skill.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/buenagames/buena-graphs.git"
+    "url": "git+https://github.com/buenagames/buena-graphs.git"
   },
   "type": "module",
   "main": "./dist/index.js",
